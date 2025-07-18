@@ -4,9 +4,9 @@ A secure and extensible Django REST API for managing users with **JWT authentica
 
 ---
 
-## 🚧 Project Status: In Progress
+## ✅ Project Status: Completed
 
-This project is a work-in-progress. The following features are under active development:
+This project has been fully developed and tested. All major features have been implemented successfully:
 
 - ✅ **Custom login system** using email & password (via JWT)
 - ✅  **Editor post creation** + **admin approval workflow**
