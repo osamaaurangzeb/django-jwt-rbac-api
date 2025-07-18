@@ -9,8 +9,8 @@ A secure and extensible Django REST API for managing users with **JWT authentica
 This project is a work-in-progress. The following features are under active development:
 
 - ✅ **Custom login system** using email & password (via JWT)
-- 🛠️ **Editor post creation** + **admin approval workflow**
-- 🛠️ **Users can view only approved posts**
+- ✅  **Editor post creation** + **admin approval workflow**
+- ✅  **Users can view only approved posts**
 - ✅ Role-based route protection via middleware (`admin`, `editor`, `user`)
 - ✅ Fully integrated Swagger and ReDoc API documentation
 - 🧪 Unit + integration tests for authentication and role validation
