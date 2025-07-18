@@ -17,8 +17,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',  # Added for token blacklisting
     'drf_yasg',  # For Swagger documentation
     'users',
+    'posts',  # New app for posts
 ]
 
 MIDDLEWARE = [
@@ -29,7 +31,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'users.middleware.JWTAccessControlMiddleware',  # Custom middleware
 ]
 
 ROOT_URLCONF = 'config.urls'

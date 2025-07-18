@@ -6,9 +6,9 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Django JWT RBAC API",
+        title="Django JWT RBAC API with Posts",
         default_version='v1',
-        description="Django REST Framework with JWT Authentication and Role-Based Access Control",
+        description="Django REST Framework with JWT Authentication, Role-Based Access Control, and Post Management System",
         contact=openapi.Contact(email="admin@example.com"),
         license=openapi.License(name="MIT License"),
     ),
@@ -19,6 +19,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('users.urls')),
+    path('api/', include('posts.urls')),
     
     # Swagger documentation
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
